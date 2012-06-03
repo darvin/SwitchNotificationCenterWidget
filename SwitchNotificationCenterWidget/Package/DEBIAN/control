@@ -1,0 +1,17 @@
+Package: com.github.darvin.SwitchNotificationCenterWidget
+Name: SwitchNotificationCenterWidget
+Version: 1.0-1
+Description: 
+Section: Addons (NotificationCenter)
+Depends: firmware (>= 5.0)
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: Sergey Klimov
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+

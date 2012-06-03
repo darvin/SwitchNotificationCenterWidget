@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		575D85C3157AC9D800F51ECB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575D85C2157AC9D800F51ECB /* Foundation.framework */; };
+		575D85C5157AC9D800F51ECB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575D85C4157AC9D800F51ECB /* UIKit.framework */; };
+		575D85D6157AC9D800F51ECB /* SwitchNotificationCenterWidgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D85D5157AC9D800F51ECB /* SwitchNotificationCenterWidgetController.m */; };
+		575D85E6157AC9D800F51ECB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575D85E5157AC9D800F51ECB /* SenTestingKit.framework */; };
+		575D85E7157AC9D800F51ECB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575D85C4157AC9D800F51ECB /* UIKit.framework */; };
+		575D85E8157AC9D800F51ECB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575D85C2157AC9D800F51ECB /* Foundation.framework */; };
+		575D85EB157AC9D800F51ECB /* SwitchNotificationCenterWidget in Frameworks */ = {isa = PBXBuildFile; fileRef = 575D85BF157AC9D800F51ECB /* SwitchNotificationCenterWidget */; };
+		575D85F1157AC9D800F51ECB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 575D85EF157AC9D800F51ECB /* InfoPlist.strings */; };
+		575D85F4157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D85F3157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests.m */; };
+		57F0CFCC157AD1AB0020C116 /* SwitchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F0CFCA157AD1AB0020C116 /* SwitchButton.h */; };
+		57F0CFCD157AD1AB0020C116 /* SwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F0CFCB157AD1AB0020C116 /* SwitchButton.m */; };
+		57F0CFD0157AD3560020C116 /* WiFiSwitchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F0CFCE157AD3560020C116 /* WiFiSwitchButton.h */; };
+		57F0CFD1157AD3560020C116 /* WiFiSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F0CFCF157AD3560020C116 /* WiFiSwitchButton.m */; };
+		57F0CFD4157AD3930020C116 /* BrightnessSwitchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F0CFD2157AD3930020C116 /* BrightnessSwitchButton.h */; };
+		57F0CFD5157AD3930020C116 /* BrightnessSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F0CFD3157AD3930020C116 /* BrightnessSwitchButton.m */; };
+		57F0CFD8157AD3AE0020C116 /* MobileInternetSwitchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F0CFD6157AD3AE0020C116 /* MobileInternetSwitchButton.h */; };
+		57F0CFD9157AD3AE0020C116 /* MobileInternetSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F0CFD7157AD3AE0020C116 /* MobileInternetSwitchButton.m */; };
+		57F0CFEF157ADC030020C116 /* UIImage+SwitchNotificationCenterWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F0CFED157ADC030020C116 /* UIImage+SwitchNotificationCenterWidget.h */; };
+		57F0CFF0157ADC030020C116 /* UIImage+SwitchNotificationCenterWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F0CFEE157ADC030020C116 /* UIImage+SwitchNotificationCenterWidget.m */; };
+		57F0CFF3157AE24C0020C116 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F0CFF2157AE24C0020C116 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		575D85E9157AC9D800F51ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 575D85B5157AC9D800F51ECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 575D85BE157AC9D800F51ECB;
+			remoteInfo = SwitchNotificationCenterWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		575D85BF157AC9D800F51ECB /* SwitchNotificationCenterWidget */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SwitchNotificationCenterWidget; sourceTree = BUILT_PRODUCTS_DIR; };
+		575D85C2157AC9D800F51ECB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		575D85C4157AC9D800F51ECB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		575D85C9157AC9D800F51ECB /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		575D85CA157AC9D800F51ECB /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		575D85CC157AC9D800F51ECB /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		575D85D0157AC9D800F51ECB /* SwitchNotificationCenterWidget.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = SwitchNotificationCenterWidget.plist; path = Package/Library/PreferenceLoader/Preferences/SwitchNotificationCenterWidget.plist; sourceTree = "<group>"; };
+		575D85D1157AC9D800F51ECB /* SwitchNotificationCenterWidgetIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SwitchNotificationCenterWidgetIcon.png; path = Package/Library/PreferenceLoader/Preferences/SwitchNotificationCenterWidgetIcon.png; sourceTree = "<group>"; };
+		575D85D2157AC9D800F51ECB /* SwitchNotificationCenterWidgetIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SwitchNotificationCenterWidgetIcon@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/SwitchNotificationCenterWidgetIcon@2x.png"; sourceTree = "<group>"; };
+		575D85D3157AC9D800F51ECB /* SwitchNotificationCenterWidget-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwitchNotificationCenterWidget-Prefix.pch"; sourceTree = "<group>"; };
+		575D85D4157AC9D800F51ECB /* SwitchNotificationCenterWidgetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchNotificationCenterWidgetController.h; sourceTree = "<group>"; };
+		575D85D5157AC9D800F51ECB /* SwitchNotificationCenterWidgetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchNotificationCenterWidgetController.m; sourceTree = "<group>"; };
+		575D85DB157AC9D800F51ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/System/Library/WeeAppPlugins/SwitchNotificationCenterWidget.bundle/Info.plist; sourceTree = "<group>"; };
+		575D85DC157AC9D800F51ECB /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Package/System/Library/WeeAppPlugins/SwitchNotificationCenterWidget.bundle/InfoPlist.strings; sourceTree = "<group>"; };
+		575D85DD157AC9D800F51ECB /* WeeAppBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WeeAppBackground@2x.png"; path = "Package/System/Library/WeeAppPlugins/SwitchNotificationCenterWidget.bundle/WeeAppBackground@2x.png"; sourceTree = "<group>"; };
+		575D85DE157AC9D800F51ECB /* WeeAppBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeeAppBackground.png; path = Package/System/Library/WeeAppPlugins/SwitchNotificationCenterWidget.bundle/WeeAppBackground.png; sourceTree = "<group>"; };
+		575D85E4157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchNotificationCenterWidgetTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		575D85E5157AC9D800F51ECB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		575D85EE157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwitchNotificationCenterWidgetTests-Info.plist"; sourceTree = "<group>"; };
+		575D85F0157AC9D800F51ECB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		575D85F2157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchNotificationCenterWidgetTests.h; sourceTree = "<group>"; };
+		575D85F3157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchNotificationCenterWidgetTests.m; sourceTree = "<group>"; };
+		57F0CFCA157AD1AB0020C116 /* SwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchButton.h; sourceTree = "<group>"; };
+		57F0CFCB157AD1AB0020C116 /* SwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchButton.m; sourceTree = "<group>"; };
+		57F0CFCE157AD3560020C116 /* WiFiSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WiFiSwitchButton.h; sourceTree = "<group>"; };
+		57F0CFCF157AD3560020C116 /* WiFiSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WiFiSwitchButton.m; sourceTree = "<group>"; };
+		57F0CFD2157AD3930020C116 /* BrightnessSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrightnessSwitchButton.h; sourceTree = "<group>"; };
+		57F0CFD3157AD3930020C116 /* BrightnessSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrightnessSwitchButton.m; sourceTree = "<group>"; };
+		57F0CFD6157AD3AE0020C116 /* MobileInternetSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileInternetSwitchButton.h; sourceTree = "<group>"; };
+		57F0CFD7157AD3AE0020C116 /* MobileInternetSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobileInternetSwitchButton.m; sourceTree = "<group>"; };
+		57F0CFE1157ADA6C0020C116 /* 55-network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "55-network.png"; path = "Package/System/Library/WeeAppPlugins/SwitchNotificationCenterWidget.bundle/55-network.png"; sourceTree = "<group>"; };
+		57F0CFE2157ADA6C0020C116 /* 55-network@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "55-network@2x.png"; path = "Package/System/Library/WeeAppPlugins/SwitchNotificationCenterWidget.bundle/55-network@2x.png"; sourceTree = "<group>"; };
+		57F0CFE3157ADA6C0020C116 /* 61-brightness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "61-brightness.png"; path = "Package/System/Library/WeeAppPlugins/SwitchNotificationCenterWidget.bundle/61-brightness.png"; sourceTree = "<group>"; };
+		57F0CFE4157ADA6C0020C116 /* 61-brightness@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "61-brightness@2x.png"; path = "Package/System/Library/WeeAppPlugins/SwitchNotificationCenterWidget.bundle/61-brightness@2x.png"; sourceTree = "<group>"; };
+		57F0CFE5157ADA6C0020C116 /* 275-broadcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "275-broadcast.png"; path = "Package/System/Library/WeeAppPlugins/SwitchNotificationCenterWidget.bundle/275-broadcast.png"; sourceTree = "<group>"; };
+		57F0CFE6157ADA6C0020C116 /* 275-broadcast@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "275-broadcast@2x.png"; path = "Package/System/Library/WeeAppPlugins/SwitchNotificationCenterWidget.bundle/275-broadcast@2x.png"; sourceTree = "<group>"; };
+		57F0CFED157ADC030020C116 /* UIImage+SwitchNotificationCenterWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SwitchNotificationCenterWidget.h"; sourceTree = "<group>"; };
+		57F0CFEE157ADC030020C116 /* UIImage+SwitchNotificationCenterWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SwitchNotificationCenterWidget.m"; sourceTree = "<group>"; };
+		57F0CFF1157ADF740020C116 /* 55-network-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "55-network-selected@2x.png"; path = "Package/System/Library/WeeAppPlugins/SwitchNotificationCenterWidget.bundle/55-network-selected@2x.png"; sourceTree = "<group>"; };
+		57F0CFF2157AE24C0020C116 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		575D85BB157AC9D800F51ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57F0CFF3157AE24C0020C116 /* CoreGraphics.framework in Frameworks */,
+				575D85C3157AC9D800F51ECB /* Foundation.framework in Frameworks */,
+				575D85C5157AC9D800F51ECB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575D85E0157AC9D800F51ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575D85E6157AC9D800F51ECB /* SenTestingKit.framework in Frameworks */,
+				575D85E7157AC9D800F51ECB /* UIKit.framework in Frameworks */,
+				575D85E8157AC9D800F51ECB /* Foundation.framework in Frameworks */,
+				575D85EB157AC9D800F51ECB /* SwitchNotificationCenterWidget in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		575D85B3157AC9D800F51ECB = {
+			isa = PBXGroup;
+			children = (
+				57F0CFF2157AE24C0020C116 /* CoreGraphics.framework */,
+				575D85C6157AC9D800F51ECB /* SwitchNotificationCenterWidget */,
+				575D85EC157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests */,
+				575D85C1157AC9D800F51ECB /* Frameworks */,
+				575D85C0157AC9D800F51ECB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		575D85C0157AC9D800F51ECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				575D85BF157AC9D800F51ECB /* SwitchNotificationCenterWidget */,
+				575D85E4157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		575D85C1157AC9D800F51ECB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				575D85C2157AC9D800F51ECB /* Foundation.framework */,
+				575D85C4157AC9D800F51ECB /* UIKit.framework */,
+				575D85E5157AC9D800F51ECB /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		575D85C6157AC9D800F51ECB /* SwitchNotificationCenterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				575D85D4157AC9D800F51ECB /* SwitchNotificationCenterWidgetController.h */,
+				575D85D5157AC9D800F51ECB /* SwitchNotificationCenterWidgetController.m */,
+				575D85C7157AC9D800F51ECB /* Package */,
+				575D85CB157AC9D800F51ECB /* Supporting Files */,
+				57F0CFCA157AD1AB0020C116 /* SwitchButton.h */,
+				57F0CFCB157AD1AB0020C116 /* SwitchButton.m */,
+				57F0CFCE157AD3560020C116 /* WiFiSwitchButton.h */,
+				57F0CFCF157AD3560020C116 /* WiFiSwitchButton.m */,
+				57F0CFD2157AD3930020C116 /* BrightnessSwitchButton.h */,
+				57F0CFD3157AD3930020C116 /* BrightnessSwitchButton.m */,
+				57F0CFD6157AD3AE0020C116 /* MobileInternetSwitchButton.h */,
+				57F0CFD7157AD3AE0020C116 /* MobileInternetSwitchButton.m */,
+				57F0CFED157ADC030020C116 /* UIImage+SwitchNotificationCenterWidget.h */,
+				57F0CFEE157ADC030020C116 /* UIImage+SwitchNotificationCenterWidget.m */,
+			);
+			path = SwitchNotificationCenterWidget;
+			sourceTree = "<group>";
+		};
+		575D85C7157AC9D800F51ECB /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				575D85C8157AC9D800F51ECB /* DEBIAN */,
+				575D85CD157AC9D800F51ECB /* Library */,
+				575D85D7157AC9D800F51ECB /* System */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		575D85C8157AC9D800F51ECB /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				575D85C9157AC9D800F51ECB /* control.txt */,
+				575D85CA157AC9D800F51ECB /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		575D85CB157AC9D800F51ECB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				575D85CC157AC9D800F51ECB /* PackageVersion.plist */,
+				575D85D3157AC9D800F51ECB /* SwitchNotificationCenterWidget-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		575D85CD157AC9D800F51ECB /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				575D85CE157AC9D800F51ECB /* PreferenceLoader */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		575D85CE157AC9D800F51ECB /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				575D85CF157AC9D800F51ECB /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		575D85CF157AC9D800F51ECB /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				575D85D0157AC9D800F51ECB /* SwitchNotificationCenterWidget.plist */,
+				575D85D1157AC9D800F51ECB /* SwitchNotificationCenterWidgetIcon.png */,
+				575D85D2157AC9D800F51ECB /* SwitchNotificationCenterWidgetIcon@2x.png */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		575D85D7157AC9D800F51ECB /* System */ = {
+			isa = PBXGroup;
+			children = (
+				575D85D8157AC9D800F51ECB /* Library */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		575D85D8157AC9D800F51ECB /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				575D85D9157AC9D800F51ECB /* WeeAppPlugins */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		575D85D9157AC9D800F51ECB /* WeeAppPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				575D85DA157AC9D800F51ECB /* ___PACKAGENAME___ */,
+			);
+			name = WeeAppPlugins;
+			sourceTree = "<group>";
+		};
+		575D85DA157AC9D800F51ECB /* ___PACKAGENAME___ */ = {
+			isa = PBXGroup;
+			children = (
+				57F0CFE1157ADA6C0020C116 /* 55-network.png */,
+				57F0CFE2157ADA6C0020C116 /* 55-network@2x.png */,
+				57F0CFE3157ADA6C0020C116 /* 61-brightness.png */,
+				57F0CFE4157ADA6C0020C116 /* 61-brightness@2x.png */,
+				57F0CFE5157ADA6C0020C116 /* 275-broadcast.png */,
+				57F0CFE6157ADA6C0020C116 /* 275-broadcast@2x.png */,
+				57F0CFF1157ADF740020C116 /* 55-network-selected@2x.png */,
+				575D85DB157AC9D800F51ECB /* Info.plist */,
+				575D85DC157AC9D800F51ECB /* InfoPlist.strings */,
+				575D85DD157AC9D800F51ECB /* WeeAppBackground@2x.png */,
+				575D85DE157AC9D800F51ECB /* WeeAppBackground.png */,
+			);
+			name = "___PACKAGENAME___";
+			sourceTree = "<group>";
+		};
+		575D85EC157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				575D85F2157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests.h */,
+				575D85F3157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests.m */,
+				575D85ED157AC9D800F51ECB /* Supporting Files */,
+			);
+			path = SwitchNotificationCenterWidgetTests;
+			sourceTree = "<group>";
+		};
+		575D85ED157AC9D800F51ECB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				575D85EE157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests-Info.plist */,
+				575D85EF157AC9D800F51ECB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		575D85BC157AC9D800F51ECB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57F0CFCC157AD1AB0020C116 /* SwitchButton.h in Headers */,
+				57F0CFD0157AD3560020C116 /* WiFiSwitchButton.h in Headers */,
+				57F0CFD4157AD3930020C116 /* BrightnessSwitchButton.h in Headers */,
+				57F0CFD8157AD3AE0020C116 /* MobileInternetSwitchButton.h in Headers */,
+				57F0CFEF157ADC030020C116 /* UIImage+SwitchNotificationCenterWidget.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		575D85BE157AC9D800F51ECB /* SwitchNotificationCenterWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 575D85F7157AC9D800F51ECB /* Build configuration list for PBXNativeTarget "SwitchNotificationCenterWidget" */;
+			buildPhases = (
+				575D85BA157AC9D800F51ECB /* Sources */,
+				575D85BB157AC9D800F51ECB /* Frameworks */,
+				575D85BC157AC9D800F51ECB /* Headers */,
+				575D85BD157AC9D800F51ECB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwitchNotificationCenterWidget;
+			productName = SwitchNotificationCenterWidget;
+			productReference = 575D85BF157AC9D800F51ECB /* SwitchNotificationCenterWidget */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		575D85E3157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 575D85FA157AC9D800F51ECB /* Build configuration list for PBXNativeTarget "SwitchNotificationCenterWidgetTests" */;
+			buildPhases = (
+				575D85DF157AC9D800F51ECB /* Sources */,
+				575D85E0157AC9D800F51ECB /* Frameworks */,
+				575D85E1157AC9D800F51ECB /* Resources */,
+				575D85E2157AC9D800F51ECB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				575D85EA157AC9D800F51ECB /* PBXTargetDependency */,
+			);
+			name = SwitchNotificationCenterWidgetTests;
+			productName = SwitchNotificationCenterWidgetTests;
+			productReference = 575D85E4157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		575D85B5157AC9D800F51ECB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Self-Employed";
+			};
+			buildConfigurationList = 575D85B8157AC9D800F51ECB /* Build configuration list for PBXProject "SwitchNotificationCenterWidget" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 575D85B3157AC9D800F51ECB;
+			productRefGroup = 575D85C0157AC9D800F51ECB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				575D85BE157AC9D800F51ECB /* SwitchNotificationCenterWidget */,
+				575D85E3157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		575D85E1157AC9D800F51ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575D85F1157AC9D800F51ECB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		575D85BD157AC9D800F51ECB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+		575D85E2157AC9D800F51ECB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		575D85BA157AC9D800F51ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575D85D6157AC9D800F51ECB /* SwitchNotificationCenterWidgetController.m in Sources */,
+				57F0CFCD157AD1AB0020C116 /* SwitchButton.m in Sources */,
+				57F0CFD1157AD3560020C116 /* WiFiSwitchButton.m in Sources */,
+				57F0CFD5157AD3930020C116 /* BrightnessSwitchButton.m in Sources */,
+				57F0CFD9157AD3AE0020C116 /* MobileInternetSwitchButton.m in Sources */,
+				57F0CFF0157ADC030020C116 /* UIImage+SwitchNotificationCenterWidget.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575D85DF157AC9D800F51ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575D85F4157AC9D800F51ECB /* SwitchNotificationCenterWidgetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		575D85EA157AC9D800F51ECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 575D85BE157AC9D800F51ECB /* SwitchNotificationCenterWidget */;
+			targetProxy = 575D85E9157AC9D800F51ECB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		575D85EF157AC9D800F51ECB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				575D85F0157AC9D800F51ECB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		575D85F5157AC9D800F51ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(iOSOpenDevPath)/frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		575D85F6157AC9D800F51ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(iOSOpenDevPath)/frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		575D85F8157AC9D800F51ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = SwitchNotificationCenterWidget;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchNotificationCenterWidget/SwitchNotificationCenterWidget-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/SwitchNotificationCenterWidget.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		575D85F9157AC9D800F51ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = SwitchNotificationCenterWidget;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchNotificationCenterWidget/SwitchNotificationCenterWidget-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/SwitchNotificationCenterWidget.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		575D85FB157AC9D800F51ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchNotificationCenterWidget/SwitchNotificationCenterWidget-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "SwitchNotificationCenterWidgetTests/SwitchNotificationCenterWidgetTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		575D85FC157AC9D800F51ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchNotificationCenterWidget/SwitchNotificationCenterWidget-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "SwitchNotificationCenterWidgetTests/SwitchNotificationCenterWidgetTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		575D85B8157AC9D800F51ECB /* Build configuration list for PBXProject "SwitchNotificationCenterWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575D85F5157AC9D800F51ECB /* Release */,
+				575D85F6157AC9D800F51ECB /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		575D85F7157AC9D800F51ECB /* Build configuration list for PBXNativeTarget "SwitchNotificationCenterWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575D85F8157AC9D800F51ECB /* Release */,
+				575D85F9157AC9D800F51ECB /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		575D85FA157AC9D800F51ECB /* Build configuration list for PBXNativeTarget "SwitchNotificationCenterWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575D85FB157AC9D800F51ECB /* Release */,
+				575D85FC157AC9D800F51ECB /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 575D85B5157AC9D800F51ECB /* Project object */;
+}
