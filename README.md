@@ -2,4 +2,4 @@ Notification Center widget with various switches (like WiFi, mobile data, screen
 Source code: https://github.com/darvin/SwitchNotificationCenterWidget
 
 # Screenshots
-https://github.com/darvin/SwitchNotificationCenterWidget/raw/master/Screenshot.png
+![screenshot](https://github.com/darvin/SwitchNotificationCenterWidget/raw/master/Screenshot.png)
